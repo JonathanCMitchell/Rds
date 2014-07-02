@@ -1,3 +1,5 @@
+[ ![Codeship Status for hackreactor-labs/hackathon](https://www.codeship.io/projects/e001baa0-e45d-0131-bd36-0a87bf416f99/status)](https://www.codeship.io/projects/25586)
+
 ### Tips/Advice from past students
 - For video games: might consider focusing on the presentation of your ideas instead of some crazy game logic/mechanic. I wanted to create a simple 30 second ‘level’ of a game, but I became too focused on have wonderful game logic that when it came time to present my idea, I did not have much to actually show.
 - Always pseudocode what you want to do before you write code. It helps you get your thoughts straight. Try writing your pseudocode in the format of git commit messages. Then, when you’ve finished the task outlined by your pseudocode, use that pseudocode as your git commit message. 
