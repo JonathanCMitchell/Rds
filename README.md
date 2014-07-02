@@ -1,5 +1,3 @@
-[ ![Codeship Status for hackreactor-labs/hackathon](https://www.codeship.io/projects/e001baa0-e45d-0131-bd36-0a87bf416f99/status)](https://www.codeship.io/projects/25586)
-
 # Sprint: Solo Hackathon
 ___
 
