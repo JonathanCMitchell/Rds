@@ -1,7 +1,8 @@
+
 # Sprint: Solo Hackathon
 ___
 
-### Sprint Overview: A Monday through Tuesday evening event to hack on something cool and possibly bring it forward into the short project .
+### Sprint Overview: A Monday through Tuesday evening event to hack on something cool and possibly bring it forward into the short project.
 
 ### Preread: 
 
@@ -14,13 +15,15 @@ The solo hackathon is time for you to iterate on these feelings and update them 
 That said, there is no right amount of code or features to produce. This should be a fun process of selecting a cool idea and then seeing if you can make some version of it happen.
 
 Likely anti-pattern (fixed mindset):
+
 1. Pick an idea, imagine the end product.
 2. Do hackathon
 3. Fall short of goal
 4. Feel bad becuase you're not yet the engineer you imagined Monday morning.
 
 Proposed pattern (growth oriented):
-1. Reflect on how much you've learn until now
+
+1. Reflect on how much you've learned until now
 2. Pick an ideas becuase the product sounds cool to you or the technology is interesting. 
 3. Do what you can in two days
 4. Reflect on how badass you've become.
@@ -55,7 +58,3 @@ You are on your way to becoming an autonomous and highly effective engineer, we 
 
 [ ] Use an MVC Framework - Make your app production grade with a full-on MVC. 
 
-assian.com/git/workflows#!workflow-feature-branch)
-Feature branch workflow - a very simple, very popular method  
-Gitflow workflow - more complicated, but useful for larger projects (probably overkill for this project period)  
-- there are some other workflows you can choose from as well, but no matter what you choose, I encourage you to have someone other than the person who wrote the code review it before it's merged into the central repository. If all looks good, then the person who wrote the code should be the one to merge it (that way they can make a quick fix in case anything goes wrong).
