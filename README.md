@@ -1,7 +1,7 @@
 # Sprint: Solo Hackathon
 ___
 
-### Sprint Overview: A Monday through Tuesday evening event to hack on something cool and possibly bring it forward into the short project.
+### Sprint Overview: A Monday through Tuesday evening event to hack on something cool and possibly bring it forward into the short project .
 
 ### Preread: 
 
