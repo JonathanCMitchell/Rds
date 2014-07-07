@@ -27,7 +27,7 @@ To build on your learning of core engineering concepts, we will beging thinking 
 
 *  [Agile](http://en.wikipedia.org/wiki/Agile_software_development) - is a modern eveolution of Iterative and Incremental Development (IID) that further formalizes the IID philosophy with a set of principles and best practices. It also applies Lean Manufacturing process like [Kanban](http://en.wikipedia.org/wiki/Kanban).
 
-* [Lead Product Process]() - Takes the essence of Agile Development methodology and applies it more broadly to the development of product and buiness models that support he requirements of the project. 
+* [Lean Product Process](http://theleanstartup.com/principles) - Takes the essence of Agile Development methodology and applies it more broadly to the development of product and buiness models that support he requirements of the project. 
 
 
 ## Basic Requirements
