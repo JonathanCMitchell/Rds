@@ -18,33 +18,16 @@ Budget you time wisely. Remember, if you are particulately succesful, you may ha
 
 ### Getting Started:
 
-<SECTION IN PROGRESS ORIGINAL TEXT IN COMMENT>
+To build on your learning of core engineering concepts, we will beging thinking about how to actually manage projects. Engineering management is a deep skill and discipline with lots of history and academic writing. We will focus on just some highlights of content to give a very brief context of how we arrive here.
 
-<!-- 
-Let's take a second to reflect. The majority of you entered Hack Reactor with little coding experience, but as you read this, you have successfully absorbed the vast majority of content you will need to get your first engineering role. Congrats.
 
-Even so, you may not be feeling like an elite engineer yet. Many students struggle with confidence at this point of the course because they didn't crush Nightmare Mode or they just feel light-years away from matching their own ideal. This is totally normal and we want to help.
+* [Waterfall Development](http://en.wikipedia.org/wiki/Waterfall_model) - An important interim development model that stressed a series of phases or stages in which all the tasks of that phase were completed before moving on the next. This is somtimes are a required method when building an expensive, physical object like a plane or building, but is virtually never preferrable for software.
 
-The solo hackathon is time for you to iterate on these feelings and update them with the present reality of your skills.
+* [Iterative and incremental development](http://en.wikipedia.org/wiki/Iterative_and_incremental_development) - Proposed in the 60's by NASA engineers, this was an attempt to reduce the risk of changing requirements during concurrent develoment process. Think of a space shuttle (physical engineering project) that is proceeding with waterfall. As the aerospace engineering team understands the limits and capabilities of the shuttle, the software team has to adapt their features and functionality. 
 
-That said, there is no right amount of code or features to produce. This should be a fun process of selecting a cool idea and then seeing if you can make some version of it happen.
+*  [Agile](http://en.wikipedia.org/wiki/Agile_software_development) - is a modern eveolution of Iterative and Incremental Development (IID) that further formalizes the IID philosophy with a set of principles and best practices. It also applies Lean Manufacturing process like [Kanban](http://en.wikipedia.org/wiki/Kanban).
 
-Proposed pattern (growth oriented):
-
-1. Reflect on how much you've learned until now
-2. Pick an ideas becuase the product sounds cool to you or the technology is interesting. 
-3. Do what you can in two days
-4. Reflect on how badass you've become.
-
-Likely anti-pattern (fixed mindset):
-
-1. Pick an idea, imagine the end product.
-2. Do hackathon
-3. Fall short of goal
-4. Feel bad becuase you're not yet the engineer you imagined Monday morning.
-
-You are on your way to becoming an autonomous and highly effective engineer, we know, because we're been working with you for over 5 weeks now. 
--->
+* [Lead Product Process]() - Takes the essence of Agile Development methodology and applies it more broadly to the development of product and buiness models that support he requirements of the project. 
 
 
 ## Basic Requirements
@@ -55,7 +38,8 @@ You are on your way to becoming an autonomous and highly effective engineer, we 
 - [ ] Cut that scope in half.
 - [ ] Cut the above scope in half
 - [ ] Use iterative development (go straight to something that demo's your idea)
-- [ ] Finish anything
+
+- [ ] Prepare for pitch @ demo on Tuesday
 
 
 ## Extra Credit
