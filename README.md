@@ -13,6 +13,13 @@ __Q:__ What is the required output?
 <br>
 __A:__ A compelling product presentation delivered to your classmates.
 
+__Q:__ Do I present my project at the demo/pitch event?
+<br>
+__A:__ Presentations will start with hackathon projects being promoted for short project, then pitches for short project (wihtout demos) and then voting on project preferences. 
+<br>
+* When these stages are complete, we will have an open demo session for students not intending to promote their project for the short project. 
+<br>
+
 Budget you time wisely. Remember, if you are particulately succesful, you may have the oppurtunity to carry your product into the short project period.
 
 
@@ -38,7 +45,6 @@ To build on your learning of core engineering concepts, we will beging thinking 
 - [ ] Cut that scope in half.
 - [ ] Cut the above scope in half
 - [ ] Use iterative development (go straight to something that demo's your idea)
-
 - [ ] Prepare for pitch @ demo on Tuesday
 
 
