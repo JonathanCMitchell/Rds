@@ -13,8 +13,6 @@ __Q:__ What is the required output?
 <br>
 __A:__ A compelling product presentation delivered to your classmates.
 
-Budget you time wisely. Remember, if you are particulately succesful, you may have the oppurtunity to carry your product into the short project period.
-
 
 ### Getting Started:
 
@@ -30,12 +28,14 @@ To build on your learning of core engineering concepts, we will beging thinking 
 
 
 ## Basic Requirements
-
-- [ ] Pick an idea (implement a technology, build a product, make art, etc).
-- [ ] Write it down on paper
-- [ ] Imagine what portion of this could be done in 24 hours.
-- [ ] Cut that scope in half.
-- [ ] Cut the above scope in half
+- [ ] Fork the [repo](https://github.com/hackreactor/2014-07-solo)
+- Complete the README.md template (<30min)
+  - [ ] Pick an idea (implement a technology, build a product, make art, etc).
+  - [ ] Write it down on paper
+  - [ ] Imagine what portion of this could be done in 24 hours.
+  - [ ] Cut the scope in half.
+  - [ ] Cut the above scope in half again.
+  - [ ] Fill in the README.md template document
 - [ ] Use iterative development (go straight to something that demo's your idea)
 - [ ] Prepare for pitch @ demo on Tuesday
 
