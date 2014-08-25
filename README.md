@@ -1,5 +1,5 @@
 
-# MVP (Primer) Project
+# MVP (Solo) Project
 
 ### Overview:
 
