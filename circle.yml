@@ -1,6 +1,6 @@
 machine:
   environment:
-    DOWNSTREAM: hackreactor/primer
+    DOWNSTREAM: hackreactor/solo
 dependencies:
   pre:
     - npm install -g hackreactor-labs/problemify
