@@ -1,5 +1,5 @@
 
-# Sprint: Solo Hackathon
+# MVP Project
 
 ### Overview:
 
@@ -13,13 +13,6 @@ __Q:__ What is the required output?
 <br>
 __A:__ A compelling product presentation delivered to your classmates.
 
-__Q:__ Do I present my project at the demo/pitch event?
-<br>
-__A:__ Presentations will start with hackathon projects being promoted for short project, then pitches for short project (wihtout demos) and then voting on project preferences. 
-<br>
-* When these stages are complete, we will have an open demo session for students not intending to promote their project for the short project. 
-<br>
-
 Budget you time wisely. Remember, if you are particulately succesful, you may have the oppurtunity to carry your product into the short project period.
 
 
@@ -27,14 +20,13 @@ Budget you time wisely. Remember, if you are particulately succesful, you may ha
 
 To build on your learning of core engineering concepts, we will beging thinking about how to actually manage projects. Engineering management is a deep skill and discipline with lots of history and academic writing. We will focus on just some highlights of content to give a very brief context of how we arrive here.
 
+* Use an [Iterative and incremental development process](http://en.wikipedia.org/wiki/Iterative_and_incremental_development) instead of a [Waterfall Process](http://en.wikipedia.org/wiki/Waterfall_model)
 
-* [Waterfall Development](http://en.wikipedia.org/wiki/Waterfall_model) - An important interim development model that stressed a series of phases or stages in which all the tasks of that phase were completed before moving on the next. This is somtimes are a required method when building an expensive, physical object like a plane or building, but is virtually never preferrable for software.
+<!--
+*  [Agile](http://en.wikipedia.org/wiki/Agile_software_development) - is a modern eveolution of Iterative and Incremental Development (IID) that further formalizes the IID philosophy with a set of principles and best practices. It also applies Lean Manufacturing process like [Kanban](http://en.wikipedia.org/wiki/Kanban).-->
 
-* [Iterative and incremental development](http://en.wikipedia.org/wiki/Iterative_and_incremental_development) - Proposed in the 60's by NASA engineers, this was an attempt to reduce the risk of changing requirements during concurrent develoment process. Think of a space shuttle (physical engineering project) that is proceeding with waterfall. As the aerospace engineering team understands the limits and capabilities of the shuttle, the software team has to adapt their features and functionality. 
-
-*  [Agile](http://en.wikipedia.org/wiki/Agile_software_development) - is a modern eveolution of Iterative and Incremental Development (IID) that further formalizes the IID philosophy with a set of principles and best practices. It also applies Lean Manufacturing process like [Kanban](http://en.wikipedia.org/wiki/Kanban).
-
-* [Lean Product Process](http://theleanstartup.com/principles) - Takes the essence of Agile Development methodology and applies it more broadly to the development of product and buiness models that support he requirements of the project. 
+<!--* [Lean Product Process](http://theleanstartup.com/principles) - Takes the essence of Agile Development methodology and applies it more broadly to the development of product and buiness models that support he requirements of the project.
+-->
 
 
 ## Basic Requirements
