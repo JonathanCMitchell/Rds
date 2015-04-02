@@ -16,7 +16,7 @@ __A:__ A compelling product presentation delivered to your classmates.
 
 ### Getting Started:
 
-To build on your learning of core engineering concepts, we will beging thinking about how to actually manage projects. Engineering management is a deep skill and discipline with lots of history and academic writing. We will focus on just some highlights of content to give a very brief context of how we arrive here.
+To build on your learning of core engineering concepts, we will begin thinking about how to actually manage projects. Engineering management is a deep skill and discipline with lots of history and academic writing. We will focus on just some highlights of content to give a very brief context of how we arrive here.
 
 * Use an [Iterative and incremental development process](http://en.wikipedia.org/wiki/Iterative_and_incremental_development) instead of a [Waterfall Process](http://en.wikipedia.org/wiki/Waterfall_model)
 
@@ -36,7 +36,7 @@ To build on your learning of core engineering concepts, we will beging thinking 
   - [ ] Cut the scope in half.
   - [ ] Cut the above scope in half again.
   - [ ] Fill in the README.md template document
-- [ ] Use iterative development (go straight to something that demo's your idea)
+- [ ] Use iterative development (go straight to something that demos your idea)
 - [ ] Prepare for pitch @ demo on Tuesday
 
 
