@@ -1,10 +1,10 @@
 machine:
   environment:
-    DOWNSTREAM: hackreactor/solo
+    DOWNSTREAM: makersquare/solo
 dependencies:
   pre:
-    - npm install -g hackreactor-labs/problemify
-    - git clone git@github.com:hackreactor-labs/scripts.git ../scripts
+    - npm install -g makersquare-labs/problemify
+    - git clone git@github.com:makersquare-labs/scripts.git ../scripts
 test:
   override:
     - echo "skipping tests..."
@@ -12,4 +12,4 @@ deployment:
   master:
     branch: master
     commands:
-      - ../scripts/circle-ci/deploy/publish-to-hackreactor.sh
+      - ../scripts/circle-ci/deploy/publish-to-makersquare.sh
