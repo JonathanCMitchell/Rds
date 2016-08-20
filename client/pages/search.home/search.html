@@ -6,5 +6,12 @@
 
 <!-- <button ng-click="getLog()">Log</button> -->
 <button ng-click="getData()">Get data</button>
-{{data}}
+
+<h1>in {{searchTerm}}</h1>
+<div ng-repeat="data in dataArr">
+<ul>
+<li class="author">{{data.data.author}}</li>
+<li>{{data.data.title}}</li>
+<li>{{data.data.url}}</li>
+</ul>
 </div>

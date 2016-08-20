@@ -12,8 +12,8 @@
 				console.log("we are in getData")
 				Search.getSearch($scope.searchTerm)
 				.then(function(data) {
-				console.log('data in scope', data)
-				$scope.data = data
+				console.log('data in scope', data.data.data.children)
+				$scope.dataArr = data.data.data.children
 				})
 			}
 		
