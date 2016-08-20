@@ -1,25 +1,23 @@
-(function() {
+angular.module('search.factory', [])
+.factory('Search', function($http) {
 
+	var getSearch = function() {
+		console.log("inside getSearch in Search Factory")
+		return $http({
+			method: "GET",
+			url: '/api/search/r/'
+		})
+		.then(function(response) {
+			return response
+		})
+		.catch(function(error) {
+			if(error) {
+				console.error("error in getSearch()", error)
+			}
+		})
+	}
 
-	angular.module('search.home', [])
-		.factory('Search', Search)
-
-function Search($http, $location) {
-		return {
+	return {
 		getSearch: getSearch
 	}
-}
-	
-function getSearch()	{
-	console.log("inside getSearch in Search Factory")
-			return $http({
-				method: "GET",
-				url: '/api/search/r/',
-				// data: {"sub": params } //may need to do post to send JSON
-			})
-			.then(function(response) {
-				return response
-			})
-}
-
-} ) ()
+})

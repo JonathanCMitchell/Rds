@@ -7,7 +7,7 @@ var router = require('./router/searchRouter.js')
 
 
 app.use(cors());
-app.use(bodyParser.json({limit: '50mb'}));
+app.use(bodyParser.json());
 
 app.use(express.static(__dirname + '/../client/')) //serve static files 
 

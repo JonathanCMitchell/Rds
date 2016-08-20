@@ -1,31 +1,18 @@
-(function() {
 
+	angular.module('search.controller', [])
+		.controller("SearchController", function($scope, Search) {
+			$scope.getLog = function() {
+			return console.log("we are in search controller")
+			}
 
-	angular.module('search.home', [])
-		.controller("SearchController", SearchController)
+			$scope.getData = function() {
+				console.log("we are in getData")
+				Search.getSearch()
+				.then(function(data) {
+				console.log('data in scope', data)
+				$scope.data = data
+				})
+			}
+		
 
-	function SearchController($scope, $location){
-		// var vm = this;
-
-		// vm.logout = function() {
-		// 	console.log('inside SearchController')
-		// }
-		$scope.getLogout = function() {
-			return console.log("we are in SearchController")
-		}
-
-	}
-
-		// function getSearch() {
-		// console.log('inside SearchController')
-		// 	Search.getSearch()
-		// 	.then(function(data) {
-		// 	console.log('data in SearchController in Search.getSearch: ',data)
-		// 	vm.data = data
-		// 	})
-		// }
-
-
-
-
-} )  ( )
+		})

@@ -1,8 +1,9 @@
-(function() {
+
 
 	angular.module('reddit', [
 		'ui.router',
-		'search.home'
+		'search.factory',
+		'search.controller'
 		])
 	.config(config); 
 		
@@ -18,5 +19,4 @@
 			.otherwise('/home')
 		}
 
-}) ()
 
