@@ -3,13 +3,14 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var cors = require('cors');
 var app = express();
-var router = require('./router/')
+var router = require('./router/searchRouter.js')
 
 
 app.use(cors());
-app.use(bodyParser());
+app.use(bodyParser.json());
 app.use(express.static('./client')) //serve static files 
 
+app.use('/api/search/r/', router)
 
 app.set('port', process.env.PORT || 3000);
 
