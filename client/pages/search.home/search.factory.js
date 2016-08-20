@@ -5,8 +5,8 @@ angular.module('search.factory', [])
 		console.log('params in getSearch in Search Factory are', params)
 		return $http({
 			method: "GET",
-			url: '/api/search/r/',
-			params: params
+			url: '/api/search/r/?search=' + params
+			// params: params
 		})
 		.then(function(response) {
 			return response

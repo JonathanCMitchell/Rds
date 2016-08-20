@@ -6,11 +6,11 @@ exports.search = {
 }
 
 function searchGet(params) {
+
+
 	console.log('params in side searchModel as object: ', params)
-	var sub = _.values(params).join('')
-	console.log('sub inside searchModel as string: ',sub)
 
-
+	var sub = params.search //for search term
 
 
 	return new Promise(function(resolve, reject) {
