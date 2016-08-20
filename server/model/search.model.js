@@ -1,3 +1,4 @@
+var _ = require('underscore')
 var request = require('request')
 
 exports.search = {
@@ -5,11 +6,17 @@ exports.search = {
 }
 
 function searchGet(params) {
-	console.log('params in side searchModel: ', params)
+	console.log('params in side searchModel as object: ', params)
+	var sub = _.values(params).join('')
+	console.log('sub inside searchModel as string: ',sub)
+
+
+
+
 	return new Promise(function(resolve, reject) {
-	request.get('https://www.reddit.com/r/trap.json', function(error,response, body) {
+	request.get('https://www.reddit.com/r/' + sub + '.json', function(error,response, body) {
 		if (!error) {
-			console.log('body inside search model get',body);
+			// console.log('body inside search model get',body);
 			resolve(body)
 		}
 		  else {
