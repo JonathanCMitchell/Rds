@@ -9,9 +9,8 @@ function searchGet(params) {
 	return new Promise(function(resolve, reject) {
 	request.get('https://www.reddit.com/r/trap.json', function(error,response, body) {
 		if (!error) {
-			console.log('we are in searchGet inside model')
+			console.log('body inside search model get',body);
 			resolve(body)
-
 		}
 		  else {
 			reject(error)
