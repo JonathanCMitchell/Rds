@@ -9,20 +9,38 @@ function searchGet(params) {
 
 
 	console.log('params in side searchModel as object: ', params)
+	var subReddit = {}
+	subReddit.search = params.search
+	subReddit.hot = params.hot
+	subReddit.rising = params.rising;
+	subReddit.top = params.top
 
-	var sub = params.search //for search term
+	
 
-
-	return new Promise(function(resolve, reject) {
-	request.get('https://www.reddit.com/r/' + sub + '.json', function(error,response, body) {
-		if (!error) {
-			// console.log('body inside search model get',body);
-			resolve(body)
-		}
-		  else {
-			reject(error)
-		}
+if (subReddit[hot] === true) {
+	return new Promise(function(resolve,reject) {
+		request.get('https://www.reddit.com/r/' + subReddit.search + '/' + subReddit.hot + '/' +'.json', function(error,response, body) {
+			if (!error) {
+				// console.log('body inside search model get',body);
+				resolve(body)
+			}
+			  else {
+				reject(error)
+			}
+			})
 		})
-	})
+}  else {
+		return new Promise(function(resolve, reject) {
+		request.get('https://www.reddit.com/r/' + subRedditsearch + '.json', function(error,response, body) {
+			if (!error) {
+				// console.log('body inside search model get',body);
+				resolve(body)
+			}
+			  else {
+				reject(error)
+			}
+			})
+		})
+	}
 }
 

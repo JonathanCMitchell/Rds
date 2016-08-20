@@ -1,13 +1,31 @@
 <div id="container">
 <h3>Hello There </h3>
-<input ng-model="searchTerm" placeholder="enter search term" ></input>
+<!-- options selector -->
+<div class="form-group">
+    <label class="checkbox-inline">
+            <input type="checkbox" name="selection" ng-model="search.formData.selection.hot"> HOT
+        </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" name="selection" ng-model="search.ormData.selection.top"> TOP
+        </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" name="selection" ng-model="search.formData.selection.rising"> RISING
+        </label>
+</div>
+
+<pre>
+	{{search.formData.selection}}
+</pre>
+
+<input ng-model="search.searchTerm" placeholder="enter search term" ng-change="addSelection()"></input>
 <!-- <button ng-click="get()">Get Log</button>
  -->
+ <!-- <button ng-click="addSelection()">Add Selection To Scope</button> -->
 
 <!-- <button ng-click="getLog()">Log</button> -->
 <button ng-click="getData()">Get data</button>
 
-<h1>in {{searchTerm}}</h1>
+<h1>in {{search.searchTerm}}</h1>
 <div ng-repeat="data in dataArr">
 <ul>
 <li class="author">{{data.data.author}}</li>

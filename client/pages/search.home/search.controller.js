@@ -7,15 +7,29 @@
 			// 	console.log('scope term is ', $scope.searchTerm)
 			// return console.log("we are in search controller")
 			// }
+			$scope.search = {}
+
 
 			$scope.getData = function() {
 				console.log("we are in getData")
-				Search.getSearch($scope.searchTerm)
+				Search.getSearch($scope.search)
 				.then(function(data) {
 				console.log('data in scope', data.data.data.children)
 				$scope.dataArr = data.data.data.children
 				})
 			}
-		
+
+			
+
+			$scope.search.formData = {}
+			
+
+			$scope.addSelection = function() {
+				console.log('form data is', $scope.search.formData)
+				console.log('form data is', $scope.search)
+
+			}
+
+			
 
 		})
