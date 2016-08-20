@@ -5,9 +5,8 @@ exports.search = {
 }
 
 function searchGet(req, res) {
-	console.log('inside search.controller.js GET')
-	console.log('req body inside search.controller: ',req.body)
-	model.search.get(req) //get sub from clientside request
+	console.log('inside search.controller.js GET reqbody::',req.query.sub)
+	model.search.get(req.query) //get sub from clientside request
 	.then(function(data) {
 		console.log('data inside search.controller.js: ')
 		res.status(200).send(data)

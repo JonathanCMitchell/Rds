@@ -4,7 +4,8 @@ exports.search = {
 	get: searchGet
 }
 
-function searchGet() {
+function searchGet(params) {
+	console.log('params in side searchModel: ', params)
 	return new Promise(function(resolve, reject) {
 	request.get('https://www.reddit.com/r/trap.json', function(error,response, body) {
 		if (!error) {
@@ -19,17 +20,3 @@ function searchGet() {
 	})
 }
 
-
- // .get('http://google.com/img.png')
- //  .on('response', function(response) {
- //    console.log(response.statusCode) // 200 
- //    console.log(response.headers['content-type']) // 'image/png' 
- //  })
- //  .on('error', function(error) {
- //  	console.log
- //  })
-
- //in url put : then whatever urlParser
-
- // req.query 
- // get request params 
