@@ -18,6 +18,10 @@ function searchGet(params) {
 	var subReddit = params.searchTerm
 	var selectionObj = JSON.parse(params.formData)
 
+	
+	// var selectionObj = JSON.parse(params.formData) || _.identity()
+
+
 	console.log('subReddit inside searchGet in search.model.js: ',subReddit);
 	console.log('selectionObj inside searchGet in search.model.js: ', selectionObj);
 	//if rising, use selectionObj.selection.rising

@@ -1,14 +1,20 @@
 
 	angular.module('search.controller', [])
 		.controller("SearchController", function($scope, Search) {
-
-			
-			// $scope.getLog = function() {
-			// 	console.log('scope term is ', $scope.searchTerm)
-			// return console.log("we are in search controller")
-			// }
 			$scope.search = {}
+			$scope.search.formData = {
+				selection: {
+				hot: false,
+				top: false,
+				rising: false
+				}
+			}
 
+			$scope.addSelection = function() {
+				console.log('form data is', $scope.search.formData)
+				console.log('form data is', $scope.search)
+
+			}
 
 			$scope.getData = function() {
 				console.log("we are in getData")
@@ -19,16 +25,12 @@
 				})
 			}
 
+
+
 			
 
-			$scope.search.formData = {}
 			
 
-			$scope.addSelection = function() {
-				console.log('form data is', $scope.search.formData)
-				console.log('form data is', $scope.search)
-
-			}
 
 			
 

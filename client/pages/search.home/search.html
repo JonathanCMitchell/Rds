@@ -17,16 +17,21 @@
 	{{search.formData.selection}}
 </pre>
 
-<input ng-model="search.searchTerm" placeholder="enter search term" ng-change="addSelection()"></input>
-<!-- <button ng-click="get()">Get Log</button>
- -->
- <!-- <button ng-click="addSelection()">Add Selection To Scope</button> -->
 
-<!-- <button ng-click="getLog()">Log</button> -->
+<!-- ENTER REDDIT QUERY -->
+<input ng-model="search.searchTerm" placeholder="enter search term" ng-change="addSelection()"></input>
 <button ng-click="getData()">Get data</button>
 
+
+<input ng-model="filterText" placeholder="filter"> </input>
+
+
+
+
+
+
 <h1>in {{search.searchTerm}}</h1>
-<div ng-repeat="data in dataArr">
+<div ng-repeat="data in dataArr | filter: filterText">
 <ul>
 <li class="author">{{data.data.author}}</li>
 <li>{{data.data.title}}</li>
