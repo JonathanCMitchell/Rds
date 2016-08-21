@@ -1,14 +1,14 @@
-<div id="container-fluid">
+<div class="md-padding">
 <!-- options selector -->
-<md-card>
-  <md-card-title>
+<md-card class="text-center">
+  <md-card-title class="text-center">
     <md-card-title-text>
       <span class="md-headline">Welcome To Reddit Search</span>
       <span class="md-subhead">Enter in your search.</span>
     </md-card-title-text>
   </md-card-title>
-  <md-card-content>
-    <div layout="row">
+  <md-card-content class="flexbox-parent">
+    <div layout="row" layout-align="center center">
       <md-input-container>
         <!-- <label>Street Name</label> -->
 <!--           <input>
@@ -32,6 +32,7 @@
     </md-select>
   </md-input-container>
 </div>
+</div>
 </md-card-content>
 </md-card>
 
@@ -41,13 +42,15 @@
 
 <h1>in {{search.searchTerm}} : {{dataa.model}}</h1>
 <div ng-repeat="data in dataArr | filter: filterText">
-<img src={{data.data.thumbnail}}>
+<div layout="row">
+<img flex='20' src={{data.data.thumbnail}}>
 <ul>
-<li class="author">{{data.data.author}}</li>
-<li>{{data.data.title}}</li>
-<a href="{{data.data.url}}">{{data.data.url}}</a>
+<p class="md-body-1">{{data.data.title}}</p>
+<p class="md-body-1">{{data.data.author}}</p>
+<a class="md-body-1" href="{{data.data.url}}">{{data.data.url}}</a>
 </ul>
 <br>
+</div>
 </div>
 
 
