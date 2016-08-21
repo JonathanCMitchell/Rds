@@ -1,3 +1,12 @@
 .container-fluid {
 	background-color: #edf0f5;
 }
+
+md-input-container .md-errors-spacer {
+    min-height: 0;
+}
+
+#mdInputFix {
+	margin-bottom: 15px;
+	margin-top: 63px;
+}

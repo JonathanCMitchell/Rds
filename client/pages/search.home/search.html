@@ -9,7 +9,7 @@
   </md-card-title>
   <md-card-content class="flexbox-parent">
     <div layout="row" layout-align="center center">
-      <md-input-container>
+      <md-input-container id=mdInputFix flex=20>
         <!-- <label>Street Name</label> -->
 <!--           <input>
 
@@ -20,11 +20,11 @@
 <md-button ng-click="getData()">Search</md-button>
 </form>
 </md-input-container>
-<md-input-container>
+<md-input-container flex=20>
   <!-- <label></label> -->
   <input ng-model="filterText" placeholder="filter results"> </input>
 </md-input-container>
-<md-input-container>
+<md-input-container flex=20>
   <label for="repeatSelect">page</label>
   <md-select name="repeatSelect" id="repeatSelect" ng-model="dataa.model" ng-change="updateSearchObjAndGetData()"  >
     <md-option ng-repeat="option in dataa.availableOptions" value="{{option.id}}" >
