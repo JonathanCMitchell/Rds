@@ -38,12 +38,16 @@
 
 <h1>in {{search.searchTerm}} : {{dataa.model}}</h1>
 <div ng-repeat="data in dataArr | filter: filterText">
+<img src={{data.data.thumbnail}}>
 <ul>
 <li class="author">{{data.data.author}}</li>
 <li>{{data.data.title}}</li>
-<li>{{data.data.url}}</li>
+<a href="{{data.data.url}}">{{data.data.url}}</a>
 </ul>
+<br>
 </div>
+
+
 
 <!-- <div ng-repeat="data_obj in dataObj | filter:filterText">
 <ul>
