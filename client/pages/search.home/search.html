@@ -12,9 +12,13 @@
       <md-input-container>
         <!-- <label>Street Name</label> -->
 <!--           <input>
---><input ng-model="search.searchTerm" placeholder="enter search term" ng-change="addSelection()"></input>
-<md-button ng-click="getData()">Search</md-button>
 
+-->
+<!-- Created Form for submit -->
+  <form name="searchData" ng-submit=getData()>
+<input id="searchData" ng-model="search.searchTerm" placeholder="enter search term" ng-change="addSelection()" ></input>
+<md-button ng-click="getData()">Search</md-button>
+</form>
 </md-input-container>
 <md-input-container>
   <!-- <label></label> -->
@@ -30,7 +34,6 @@
 </div>
 </md-card-content>
 </md-card>
-
 
 
 

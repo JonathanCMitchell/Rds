@@ -26,7 +26,7 @@
 					$scope.dataArr = data.data[0].data.children
 					})
 					.catch(function(error) {
-						console.error('please enter valid search term')
+						console.error('please enter valid search term', error)
 					})
 				} else {
 					Search.getSearch($scope.search)
