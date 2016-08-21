@@ -1,157 +1,35 @@
-<div id="container">
-<h3>Hello There </h3>
+<div id="container-fluid">
 <!-- options selector -->
-<!-- <div class="form-group">
-    <label class="checkbox-inline">
-            <input type="checkbox" name="selection" ng-model="search.formData.selection.hot"> HOT
-        </label>
-        <label class="checkbox-inline">
-            <input type="checkbox" name="selection" ng-model="search.formData.selection.top"> TOP
-        </label>
-        <label class="checkbox-inline">
-            <input type="checkbox" name="selection" ng-model="search.formData.selection.rising"> RISING
-        </label>
-</div> -->
-
-
-<!-- Making dropdown -->
-<!-- <md-card>
-    <md-card-title>
-      <md-card-title-text>
-        <span class="md-headline">Search Reddit</span>
-        <span class="md-subhead">Tell us a little about you.</span>
-      </md-card-title-text>
-    </md-card-title>
-    <md-card-content>
-      <div layout="row">
-        <md-input-container>
-          <label>Search Threads</label>
-          <input>
-        </md-input-container>
-        <md-input-container>
-          <label>City</label>
-          <input>
-        </md-input-container> -->
-
-<!-- 
-        <md-input-container>
-          <label>State</label>
-          <md-select ng-model="selection" ng-change="logSelectBox()">
-            <md-option><em>None</em></md-option>
-             <md-option ng-value="hot"><em>Hot</em></md-option>
-            <md-option ng-value="rising"><em>Rising</em></md-option>
-            <md-option ng-value="top"><em>Top</em></md-option>
-					
-             <md-option ng-repeat="(key, value) in states" value="{{key}}">{{value}}</md-option>
-							
-
-            <md-option ng-repeat="(key, val) in states" ng-value="state" ng-disabled="$index === 1" >
-              {{key}}
-              </md-option>
-            </md-option>
-          </md-select>
-        </md-input-container>
-        <pre>
-        {{key}}
-
-        	{{userState}}
-        </pre>
-       -->
-
-<!-- 	<div>
-    <h1 class="md-title">Select Subreddit</h1>
+<md-card>
+  <md-card-title>
+    <md-card-title-text>
+      <span class="md-headline">Welcome To Reddit Search</span>
+      <span class="md-subhead">Enter in your search.</span>
+    </md-card-title-text>
+  </md-card-title>
+  <md-card-content>
     <div layout="row">
       <md-input-container>
-        <label>Items</label>
-        <md-select ng-model="selectedItem">
-          <md-optgroup label="items">
-            <md-option ng-value = "selectedItem" ng-click="getSelectedText()" ng-value="item" ng-repeat="item in items">{{item}}</md-option>
-          </md-optgroup>
-        </md-select>
-      </md-input-container>
-    </div>
-  </div> -->
-  
+        <!-- <label>Street Name</label> -->
+<!--           <input>
+--><input ng-model="search.searchTerm" placeholder="enter search term" ng-change="addSelection()"></input>
+<md-button ng-click="getData()">Search</md-button>
 
-      <!-- </div>
-    </md-card-content>
-  </md-card> -->
-
-
-<md-card>
-    <md-card-title>
-      <md-card-title-text>
-        <span class="md-headline">Account Preferences</span>
-        <span class="md-subhead">Tell us a little about you.</span>
-      </md-card-title-text>
-    </md-card-title>
-    <md-card-content>
-      <div layout="row">
-        <md-input-container>
-          <label>Street Name</label>
-          <input>
-        </md-input-container>
-        <md-input-container>
-          <label>City</label>
-          <input>
-        </md-input-container>
-        <md-input-container>
-          <label for="repeatSelect">Category</label>
-            <md-select name="repeatSelect" id="repeatSelect" ng-model="dataa.model" ng-change="updateSearchObjAndGetData()" >
-            
-            <md-option ng-repeat="option in dataa.availableOptions" value="{{option.id}}" >
-{{option.name}}</md-option>
-
-            <!-- <md-option ng-repeat="state in ctrl.states" ng-value="state.abbrev" ng-disabled="$index === 1">
-              {{state.abbrev}} -->
-            
-          </md-select>
-        </md-input-container>
-      </div>
-    </md-card-content>
-  </md-card>
-
-
-
-
-
-
-
-
-<!-- 
-<label for="repeatSelect">
-<md-select name="repeatSelect" id="repeatSelect" ng-model="dataa.model" ng-change="updateSearchObjAndGetData()" >
-<option ng-repeat="option in dataa.availableOptions" value="{{option.id}}" >
-{{option.name}}</option>
-</md-select>
-</label>
-<pre>
-  {{dataa.model}}
-</pre>
- -->
-  
-
-
-
-
-
-
-
-
-
-
-
-<pre>
-	{{search.formData.selection}}
-</pre>
-
-
-<!-- ENTER REDDIT QUERY -->
-<input ng-model="search.searchTerm" placeholder="enter search term" ng-change="addSelection()"></input>
-<button ng-click="getData()">Get data</button>
-
-
-<input ng-model="filterText" placeholder="filter"> </input>
+</md-input-container>
+<md-input-container>
+  <!-- <label></label> -->
+  <input ng-model="filterText" placeholder="filter results"> </input>
+</md-input-container>
+<md-input-container>
+  <label for="repeatSelect">page</label>
+  <md-select name="repeatSelect" id="repeatSelect" ng-model="dataa.model" ng-change="updateSearchObjAndGetData()"  >
+    <md-option ng-repeat="option in dataa.availableOptions" value="{{option.id}}" >
+      {{option.name}}</md-option>
+    </md-select>
+  </md-input-container>
+</div>
+</md-card-content>
+</md-card>
 
 
 
@@ -166,3 +44,8 @@
 <li>{{data.data.url}}</li>
 </ul>
 </div>
+
+<!-- <div ng-repeat="data_obj in dataObj | filter:filterText">
+<ul>
+  <li>in Random: {{data_obj.title}}</li>
+</ul> -->

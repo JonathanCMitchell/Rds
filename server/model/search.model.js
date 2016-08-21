@@ -7,10 +7,10 @@ exports.search = {
 
 function searchGet(params) {
 	console.log('params in side searchModel as object: ', params)
-	console.log('subReddit inside searchGet in search.model.js: ',subReddit);
-	console.log('selectionObj inside searchGet in search.model.js: ', selectionObj);
 	var subReddit = params.searchTerm
 	var selectionObj = JSON.parse(params.formData)
+	console.log('subReddit inside searchGet in search.model.js: ',subReddit);
+	console.log('selectionObj inside searchGet in search.model.js: ', selectionObj);
 	//if rising, use selectionObj.selection.rising
 	//if top, use selectionObj.selection.top
 	//if hot, use selectionObj.selection.hot
@@ -52,8 +52,19 @@ if (!!subReddit) {
 				}
 				})
 			})
-	}
-	else {
+	}  else if (selectionObj.selection.random){
+		return new Promise(function(resolve,reject) {
+			request.get('https://www.reddit.com/r/' + subReddit + '/' + 'random' + '/' +'.json', function(error,response, body) {
+				if (!error) {
+					// console.log('body inside search model get',body);
+					resolve(body)
+				}
+				  else {
+					reject(error)
+				}
+				})
+			})
+	}  else {
 		return new Promise(function(resolve, reject) {
 		request.get('https://www.reddit.com/r/' + subReddit + '.json', function(error,response, body) {
 			if (!error) {
