@@ -58,27 +58,34 @@
         </pre>
        -->
 
-	<div>
+<!-- 	<div>
     <h1 class="md-title">Select Subreddit</h1>
     <div layout="row">
       <md-input-container>
         <label>Items</label>
-        <md-select ng-model="selectedItem" md-selected-text="getSelectedText()" >
+        <md-select ng-model="selectedItem">
           <md-optgroup label="items">
-            <md-option ng-click="getSelectedText()" ng-value="item" ng-repeat="item in items">{{item}}</md-option>
+            <md-option ng-value = "selectedItem" ng-click="getSelectedText()" ng-value="item" ng-repeat="item in items">{{item}}</md-option>
           </md-optgroup>
         </md-select>
       </md-input-container>
     </div>
-  </div>
+  </div> -->
   
 
       <!-- </div>
     </md-card-content>
   </md-card> -->
 
-
-
+<label for="repeatSelect">
+<select name="repeatSelect" id="repeatSelect" ng-model="dataa.model" ng-change="log()" >
+<option ng-repeat="option in dataa.availableOptions" value="{{option.id}}" >
+{{option.name}}</option>
+</select>
+</label>
+<pre>
+  {{dataa.model}}
+</pre>
 
   
 
