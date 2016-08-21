@@ -78,7 +78,7 @@
   </md-card> -->
 
 <label for="repeatSelect">
-<select name="repeatSelect" id="repeatSelect" ng-model="dataa.model" ng-change="log()" >
+<select name="repeatSelect" id="repeatSelect" ng-model="dataa.model" ng-change="updateSearchObjAndGetData()" >
 <option ng-repeat="option in dataa.availableOptions" value="{{option.id}}" >
 {{option.name}}</option>
 </select>
@@ -116,7 +116,7 @@
 
 
 
-<h1>in {{search.searchTerm}}</h1>
+<h1>in {{search.searchTerm}} : {{dataa.model}}</h1>
 <div ng-repeat="data in dataArr | filter: filterText">
 <ul>
 <li class="author">{{data.data.author}}</li>
