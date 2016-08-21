@@ -13,6 +13,62 @@
         </label>
 </div>
 
+
+<!-- Making dropdown -->
+<md-card>
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-headline">Search Reddit</span>
+        <span class="md-subhead">Tell us a little about you.</span>
+      </md-card-title-text>
+    </md-card-title>
+    <md-card-content>
+      <div layout="row">
+        <md-input-container>
+          <label>Search Threads</label>
+          <input>
+        </md-input-container>
+        <md-input-container>
+          <label>City</label>
+          <input>
+        </md-input-container>
+        <md-input-container>
+          <label>State</label>
+          <md-select ng-model="search.formData.selection" onChange="getData()">
+            <md-option><em>None</em></md-option>
+            <md-option><em></em></md-option>
+            <md-option ng-repeat="state in ctrl.states" ng-value="state.abbrev" ng-disabled="$index === 1">
+              {{state.abbrev}}
+            </md-option>
+          </md-select>
+        </md-input-container>
+      </div>
+    </md-card-content>
+  </md-card>
+
+
+
+
+  
+ <!--  angular
+      .module('selectDemoBasic', ['ngMaterial'])
+      .controller('AppCtrl', function($scope) {
+        this.userState = '';
+        this.states = ('top rising new hot CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS ' +
+            'MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI ' +
+            'WY').split(' ').map(function (state) { return { abbrev: state }; });
+      });
+ -->
+
+
+
+
+
+
+
+
+
+
 <pre>
 	{{search.formData.selection}}
 </pre>

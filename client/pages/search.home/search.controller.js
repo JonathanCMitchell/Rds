@@ -1,5 +1,5 @@
 
-	angular.module('search.controller', [])
+	angular.module('search.controller', ['ngMaterial'])
 		.controller("SearchController", function($scope, Search) {
 			$scope.search = {}
 			$scope.search.formData = {
@@ -25,6 +25,16 @@
 				})
 			}
 
+
+
+			  // angular
+     //  .module('selectDemoBasic', ['ngMaterial'])
+     //  .controller('AppCtrl', function($scope) {
+     //    this.userState = '';
+     //    this.states = ('top rising new hot CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS ' +
+     //        'MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI ' +
+     //        'WY').split(' ').map(function (state) { return { abbrev: state }; });
+     //  });
 
 
 			

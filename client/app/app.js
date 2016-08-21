@@ -2,6 +2,7 @@
 
 	angular.module('reddit', [
 		'ui.router',
+		'ngMaterial',
 		'search.factory',
 		'search.controller'
 		])
