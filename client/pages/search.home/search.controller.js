@@ -28,6 +28,7 @@
 			 $scope.dataa = {
 			 	model: null, //gets bound to whatever is selected
 			 	availableOptions: [
+			 	{id: 'None', name: 'None'},
 			 		{id: 'Hot', name: 'Hot'},
 			 		{id: 'Top', name: 'Top'},
 			 		{id: 'Rising', name: 'Rising'}
@@ -39,6 +40,7 @@
 				obj['hot'] = false,
 				obj['rising'] = false,
 				obj['top'] = false,
+				obj['none'] = false
 				obj[str] = true
 				}
 				return obj
@@ -47,10 +49,10 @@
 				$scope.updateSearchObjAndGetData = function() {
 					console.log('you clicked', $scope.dataa.model)
 					var term = $scope.dataa.model.toLowerCase()
-					toggleObj($scope.search.formData.selection, term)
 					console.log('toggledObj scope.search.formData in updateSearchObjAndGetData', $scope.search.formData)
 					console.log('toggledObj scope.search.formData.selection in updateSearchObjAndGetData', $scope.search.formData.selection)
 					if ($scope.search.searchTerm) {
+					toggleObj($scope.search.formData.selection, term)
 					Search.getSearch($scope.search)
 					.then(function(data) {
 						console.log('data in log in scope', data.data.data.children)

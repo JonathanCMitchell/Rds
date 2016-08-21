@@ -77,16 +77,58 @@
     </md-card-content>
   </md-card> -->
 
+
+<md-card>
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-headline">Account Preferences</span>
+        <span class="md-subhead">Tell us a little about you.</span>
+      </md-card-title-text>
+    </md-card-title>
+    <md-card-content>
+      <div layout="row">
+        <md-input-container>
+          <label>Street Name</label>
+          <input>
+        </md-input-container>
+        <md-input-container>
+          <label>City</label>
+          <input>
+        </md-input-container>
+        <md-input-container>
+          <label for="repeatSelect">Category</label>
+            <md-select name="repeatSelect" id="repeatSelect" ng-model="dataa.model" ng-change="updateSearchObjAndGetData()" >
+            
+            <md-option ng-repeat="option in dataa.availableOptions" value="{{option.id}}" >
+{{option.name}}</md-option>
+
+            <!-- <md-option ng-repeat="state in ctrl.states" ng-value="state.abbrev" ng-disabled="$index === 1">
+              {{state.abbrev}} -->
+            
+          </md-select>
+        </md-input-container>
+      </div>
+    </md-card-content>
+  </md-card>
+
+
+
+
+
+
+
+
+<!-- 
 <label for="repeatSelect">
-<select name="repeatSelect" id="repeatSelect" ng-model="dataa.model" ng-change="updateSearchObjAndGetData()" >
+<md-select name="repeatSelect" id="repeatSelect" ng-model="dataa.model" ng-change="updateSearchObjAndGetData()" >
 <option ng-repeat="option in dataa.availableOptions" value="{{option.id}}" >
 {{option.name}}</option>
-</select>
+</md-select>
 </label>
 <pre>
   {{dataa.model}}
 </pre>
-
+ -->
   
 
 
