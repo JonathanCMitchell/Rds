@@ -36,20 +36,18 @@
 
 <div class="container-fluid">
     <h1 class="text-center">in {{search.searchTerm}} : {{dataa.model}}</h1>
-    <div clas="row clearfix">
-    <div class="col-md-4 clearfix repeatBox text-center" ng-repeat="data in dataArr | filter: filterText">
+    <div class="clearfix repeatBox col-md-offset-3 col-md-6 text-center" ng-repeat="data in dataArr | filter: filterText">
       <img class="text-center col-md-2 repeatBoxImg" src={{data.data.thumbnail}}>
-        
-        <div class=" col-md-4" >
+        <div class=" col-md-8" >
         <p>{{data.data.title}}</p>
         <p>{{data.data.author}}</p>
         <a href="{{data.data.url}}">see more</a>
         </div>
       <br>
     </div> <!-- ng-repeat div -->
-    </div>
 </div>
 
+<!-- class="col-md-2 col-md-offset-5" -->
 
 
 
