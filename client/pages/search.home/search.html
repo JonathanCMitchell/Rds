@@ -16,7 +16,7 @@
         </form>
       </md-input-container>
       <md-input-container flex=20>
-        <input ng-model="filterText" placeholder="filter results"> </input>
+        <input ng-model="filterText"  placeholder="filter results"> </input>
       </md-input-container>
       <md-input-container flex=20>
         <label for="repeatSelect">page</label>
@@ -36,15 +36,22 @@
 
 <div class="container-fluid">
     <h1 class="text-center">in {{search.searchTerm}} : {{dataa.model}}</h1>
-    <div class="row col-md-6" ng-repeat="data in dataArr | filter: filterText">
-      <img class="text-center col-md-4" src={{data.data.thumbnail}}>
+    <div clas="row clearfix">
+    <div class="col-md-4 clearfix repeatBox text-center" ng-repeat="data in dataArr | filter: filterText">
+      <img class="text-center col-md-2 repeatBoxImg" src={{data.data.thumbnail}}>
         
-        <div class="col-md-4">
-        <p class="text-center">{{data.data.title}}</p>
-        <p class="text-center">{{data.data.author}}</p>
-        <a class="text-center href="{{data.data.url}}">{{data.data.url}}</a>
+        <div class=" col-md-4" >
+        <p>{{data.data.title}}</p>
+        <p>{{data.data.author}}</p>
+        <a href="{{data.data.url}}">see more</a>
         </div>
       <br>
     </div> <!-- ng-repeat div -->
+    </div>
 </div>
+
+
+
+
+
 
