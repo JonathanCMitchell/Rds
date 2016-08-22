@@ -3,7 +3,7 @@
 <md-card class="text-center">
   <md-card-title class="text-center">
     <md-card-title-text>
-      <span class="md-headline">Welcome To Greddit Search</span>
+      <span class="md-headline">Welcome To Reddit Search</span>
       <span class="md-subhead">Enter in your search.</span>
     </md-card-title-text>
   </md-card-title>
@@ -35,7 +35,7 @@
 
 
 <div class="container-fluid">
-    <h1 class="text-center">in {{search.searchTerm}} : {{dataa.model}}</h1>
+    <h1 class="text-center">{{search.searchTerm}}  {{dataa.model}}</h1>
     <div class="clearfix repeatBox col-md-offset-3 col-md-6 text-center" ng-repeat="data in dataArr | filter: filterText">
       <img  class="text-center col-md-2 repeatBoxImg" src={{data.data.thumbnail}}>
       <p>{{data.data.ups}}&#9650;</p>
@@ -49,8 +49,3 @@
 </div>
 
 <!-- class="col-md-2 col-md-offset-5" -->
-
-
-
-
-
