@@ -1,4 +1,3 @@
-
 	angular.module('search.controller', ['ngMaterial'])
 		.controller("SearchController", function($scope, Search) {
 			$scope.search = {}
@@ -13,7 +12,18 @@
 
 			$scope.addSelection = function() {
 				console.log('form data is', $scope.search)
+			}
 
+			$scope.hasImage = function() {
+				$scope.dataArr.forEach(function(subRedditObj){
+					console.log('inside hasImage subRedditObj', subRedditObj)
+					console.log('subredditThumbnail', subRedditObj.data.thumbnail)
+					// subRedditObj.hasImage = (subRedditObj.data.thumbnail.indexOf("http") !== -1) //no image
+					if (subRedditObj.data.thumbnail.indexOf('self') !== -1) {
+						subRedditObj.data.thumbnail = 'http://cdn2.ubergizmo.com/wp-content/uploads/2013/05/reddit.png'
+					}
+					console.log('inside hasImage subRedditObj[hasImage]', subRedditObj.hasImage)
+				})
 			}
 
 			$scope.getData = function() {
@@ -24,6 +34,7 @@
 					console.log('data in scope random', data.data[0].data.children)
 					console.log('typeof data in scope random: ',Array.isArray(data.data[0].data.children))
 					$scope.dataArr = data.data[0].data.children
+					$scope.hasImage();
 					})
 					.catch(function(error) {
 						console.error('please enter valid search term', error)
@@ -33,6 +44,7 @@
 					.then(function(data) {
 					console.log('data in scope', data.data.data.children)
 					$scope.dataArr = data.data.data.children
+					$scope.hasImage();
 					})
 				}
 			}
