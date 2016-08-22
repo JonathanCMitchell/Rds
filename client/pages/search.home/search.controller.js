@@ -14,15 +14,23 @@
 				console.log('form data is', $scope.search)
 			}
 
+
+
+			function validateURL(textval) {
+    		var urlregex = /((([A-Za-z]{3,9}:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+|(?:www.|[-;:&=\+\$,\w]+@)[A-Za-z0-9.-]+)((?:\/[\+~%\/.\w-_]*)?\??(?:[-\+=&;%@.\w_]*)#?(?:[\w]*))?)/
+    		return urlregex.test(textval);
+			}
+					
+
+
 			$scope.hasImage = function() {
 				$scope.dataArr.forEach(function(subRedditObj){
 					console.log('inside hasImage subRedditObj', subRedditObj)
 					console.log('subredditThumbnail', subRedditObj.data.thumbnail)
-					// subRedditObj.hasImage = (subRedditObj.data.thumbnail.indexOf("http") !== -1) //no image
-					if (subRedditObj.data.thumbnail.indexOf('self') !== -1) {
+					if (!validateURL(subRedditObj.data.thumbnail)) {
 						subRedditObj.data.thumbnail = 'http://cdn2.ubergizmo.com/wp-content/uploads/2013/05/reddit.png'
-					}
 					console.log('inside hasImage subRedditObj[hasImage]', subRedditObj.hasImage)
+					}
 				})
 			}
 
