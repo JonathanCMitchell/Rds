@@ -4,10 +4,10 @@
   "description": "### Overview:",
   "main": "index.js",
   "scripts": {
+    "postinstall": "./node_modules/bower/lib/bin/bower.js install",
     "test": "echo \"Error: no test specified\" && exit 1",
     "nodemonstart": "nodemon server/server.js ",
-    "start": "node server/server.js",
-    "postinstall": "./node_modules/bower/lib/bin/bower.js install"
+    "start": "node server/server.js"
   },
   "repository": {
     "type": "git",
