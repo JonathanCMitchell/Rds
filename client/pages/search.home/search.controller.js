@@ -28,7 +28,7 @@
 					console.log('inside hasImage subRedditObj', subRedditObj)
 					console.log('subredditThumbnail', subRedditObj.data.thumbnail)
 					if (!validateURL(subRedditObj.data.thumbnail)) {
-						subRedditObj.data.thumbnail = '../../lib/reddit.png'
+						subRedditObj.data.thumbnail = '../../assets/reddit.png'
 					console.log('inside hasImage subRedditObj[hasImage]', subRedditObj.hasImage)
 					}
 				})
