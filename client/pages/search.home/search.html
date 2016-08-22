@@ -37,7 +37,7 @@
 <div class="container-fluid">
     <h1 class="text-center">in {{search.searchTerm}} : {{dataa.model}}</h1>
     <div class="clearfix repeatBox col-md-offset-3 col-md-6 text-center" ng-repeat="data in dataArr | filter: filterText">
-      <img ng-if="data.data.thumbnail !== 'default'" class="text-center col-md-2 repeatBoxImg" placeholder="na" src={{data.data.thumbnail}}>
+      <img class="text-center col-md-2 repeatBoxImg" placeholder="na" src={{data.data.thumbnail}}>
       <p>{{data.data.ups}}&#9650;</p>
 
         <div class=" col-md-8" >
