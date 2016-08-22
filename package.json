@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server/server.js "
+    "nodemonstart": "nodemon server/server.js ",
+    "start": "node server/server.js",
+    "postinstall": "./node_modules/bower/bin/bower install"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
   },
   "dependencies": {
     "body-parser": "^1.15.2",
+    "bower": "^1.7.9",
     "cors": "^2.7.1",
     "express": "^4.14.0",
     "httpi": "^0.3.0",
